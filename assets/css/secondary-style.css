@@ -76,8 +76,15 @@
 }
 .my-education div article {
     Display:flex;
-    margin-top: 50px;
     padding: 10px 10px 10px 10px;   
+}
+.my-education div .bla-bla {
+    width:90%;
+    text-align: center;
+    color:darkblue;
+    padding: 10px 10% 10px 10%;
+    margin:auto
+    
 }
 .US-highschool h2 {
     color: rgb(231, 204, 50);
