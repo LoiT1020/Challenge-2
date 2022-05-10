@@ -54,6 +54,15 @@ header {
       padding: 10px 10px 10px 10px;
       font-size: 1.5vw;
   }
+  /*new feature, just learened*/
+  .sub-nav{
+    background-color:white;
+    padding: 10px 10px 10px 10px;
+    display:none;
+    border-radius: 50px;
+    z-index: 9999;
+  }
+ 
 /*end header style*/
 
 /*footer style*/
@@ -73,6 +82,8 @@ footer {
       font-size: 28px;
       color:rgb(97, 51, 51,0.9);
       display:flex;
+      margin-top:5%;
+      margin-bottom:10%;
       
   }
   .Introduction .p-intro{
@@ -97,6 +108,8 @@ footer {
   /* other things style*/
   .etc{
       border-top:3px dotted darkblue;
+      padding-top: 10%;
+      Padding-bottom: 10%
   }
   .etc h2{
       display:block;
@@ -115,6 +128,30 @@ footer {
     font-size:30px;
     color:rgb(0, 128, 128)
   }
+/*Skill and Experience style*/
+.Skill-Experience{
+    width: 100%;
+    margin: 0 auto 0 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.SE-list{
+    display:block;
+    width:70%;
+    margin:auto;  
+    font-size:30px;
+    color:rgb(0, 128, 128)
+}
+.SE-list ul{
+    color: darkblue;
+    font-size:25px;
+    padding: 10px 10px 10px 10px;   
+}
+.SE-list ul li{
+    justify-content: space-around;
+}
+
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
@@ -162,4 +199,9 @@ footer {
     .etc p{
         font-size:20px;
     }
+}
+header .has-children:hover>.sub-nav {
+    Display:block;
+    font-size: 0.8vw;
+    position: absolute;
 }
